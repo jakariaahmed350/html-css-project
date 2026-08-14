@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Form</title>
+        <style>
+            * {
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+            }
+            body {
+                font-family:Arial, sans-serif;
+                background:
+                linear-gradient(to bottom, #05062d 0%, #17104b 20%, #7a176b 48%, #ef2870 65%, #a6156b 100%);
+            }
+            .container {
+                width:100%;
+                min-height:100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+            }
+            .login-box {
+                width: 300px;
+                padding: 38px 34px;
+                border: 1.5px solid #acb1b0;
+                border-radius: 17px;
+                background: rgba(60,0,55,0.15);
+                box-shadow: 0 0 20px #acb1b0;
+            }
+            .login-box h1 {
+                color: #fff;
+                text-align: center;
+                margin-bottom: 25px;
+                font-weight: 600;
+            }
+            .input-group {
+                position: relative;
+                margin-bottom: 27px;
+            }
+            .input-group label {
+                display: block;
+                color: white;
+                font-size: 12px;
+                margin-bottom: 8px;
+            }
+            .input-group input {
+                width: 100%;
+                border: none;
+                border-bottom: 2px solid white;
+                outline: none;
+                background: transparent;
+                color: white;
+                font-size: 12px;
+                padding: 0 28px 5px 5px;
+            }
+            .icon {
+                position: absolute;
+                right: 5px;
+                bottom: 6px;
+                color: white;
+                font-size: 15px;
+            }
+            .remember {
+                margin-top: 12px;
+                margin-bottom: 15px;
+                color: white;
+                font-size: 11px;
+            }
+            .remember input {
+                width: 11px;
+                height: 11px;
+                margin-right: 4px;
+            }
+            .forgot {
+                margin-left: 3px;
+                color: white;
+            }
+            .login-btn {
+                width: 100%;
+                padding: 12px;
+                border: none;
+                border-radius: 20px;
+                background: white;
+                color: #222;
+                font-size: 15px;
+            }
+            .register {
+                margin-top: 20px;
+                text-align: center;
+                color: white;
+                font-size: 11px;
+            }
+            .register a {
+                color: white;
+                font-weight: bold;
+            }
+            @media (max-width: 600px) {
+                .login-box {
+                    width: 290px;
+                    padding: 35px 30px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="login-box">
+                <h1>Login</h1>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder=" Enter your Email">
+                   <span class="icon">✉</span>
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder=" Enter your Password">
+                    <span class="icon">♙</span>
+                </div>
+                <div class="remember">
+                    <input type="checkbox">
+                    <span>Remember Me</span>
+                    <a href="register.html" class="forgot"  >Forgot Password?</a>
+                </div>
+                <button type="submit" class="login-btn">Login </button>
+                <div class="register">
+                    Don't have an account?
+                    <a href="forget-password.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
