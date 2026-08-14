@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Empty Table Cells</title>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 30px;
+    }
+    .container {
+        width: 100%;
+        margin: 10px;
+        border: 3px solid #000;
+        padding: 50px;
+        background: #fff;
+    }
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    p {
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        color: gray;
+        font-style: italic;
+        margin-bottom: 50px;
+
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th,
+    td {
+        border: 1px solid #666;
+        padding: 8px;
+        text-align: center;
+        font-size: 20px;
+    }
+    th {
+        background-color: #647bbb;
+    }
+    td:nth-child(1) {
+        background-color: #cab8cf;
+    }
+    td:nth-child(2) {
+        background-color: #ccacca;
+    }
+    td:nth-child(3) {
+        background-color: #c0d39e;
+    }
+    .empty {
+        background-color:  #f5f1f1 !important;
+        color: gray;
+        border: 2px dashed #777;
+    }
+
+   </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Styling Empty Table Cells</h1>
+    <p>bradleytaunt.com/styling-empty-table-cells</p>
+ <table>
+    <thead>
+        <tr>
+            <th>Table Heading One</th>
+            <th>Table Heading Two</th>
+            <th>Table Heading Three</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Table Data One</td>
+            <td class="empty">No Data Found</td>
+            <td>Table Data Three</td>
+        </tr>
+        <tr>
+            <td>Table Data One</td>
+            <td>Table Data Two</td>
+            <td>Table Data Three</td>
+        </tr>
+        <tr>
+            <td>Table Data One</td>
+            <td>Table Data Two</td>
+            <td class="empty">No Data Found</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td class="empty">No Data Found</td>
+            <td>Table Data Two</td>
+            <td>Table Data Three</td>
+        </tr>
+    </tfoot>
+ </table>
+</div>
+</body>
+</html>
