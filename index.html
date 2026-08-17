@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+        }
+        .container{
+            min-width: 550px;
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 20px;
+            padding: 10px;
+        }
+        .box{
+            border: 4px solid black;
+            border-radius: 12px;
+            display: grid;
+            place-items: center;
+            font-size: 25px;
+            text-align: center;
+        }
+        .left-header {
+            grid-area: 1 / 1 / 2 / 2;
+
+            background: #ffcaca;
+        }
+
+        .left-banner {
+            grid-area: 2 / 1 / 3 / 2;
+
+            background: #ffe5ca;
+        }
+
+        .left-navigation {
+            grid-area: 3 / 1 / 4 / 2;
+
+            background: #ffffca;
+        }
+
+        .left-content {
+            grid-area: 4 / 1 / 5 / 2;
+
+            background: #caffca;
+        }
+
+        .left-ads {
+            grid-area: 5 / 1 / 6 / 2;
+
+            background: #d0d0ff;
+        }
+
+        .left-footer {
+            grid-area: 6 / 1 / 7 / 2;
+
+            background: #ffcaff;
+        }
+
+
+        /* =========================
+           RIGHT SIDE
+        ========================= */
+
+        .header {
+            grid-area: 1 / 2 / 2 / 4;
+
+            background: #ffcaca;
+        }
+
+
+        .banner {
+            grid-area: 2 / 2 / 3 / 3;
+
+            background: #ffe5ca;
+        }
+
+
+        .navigation {
+            grid-area: 2 / 3 / 4 / 4;
+
+            background: #ffffca;
+        }
+
+
+        .content {
+            grid-area: 3 / 2 / 4 / 3;
+
+            background: #caffca;
+        }
+
+
+        .ads {
+            grid-area: 4 / 3 / 5 / 4;
+
+            background: #d0d0ff;
+        }
+
+
+        .footer {
+            grid-area: 4 / 2 / 5 / 4;
+
+            background: #ffcaff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+
+        <!-- Left Side -->
+
+        <div class="box left-header">
+            header
+        </div>
+
+        <div class="box left-banner">
+            (optional)<br>
+            banner
+        </div>
+
+        <div class="box left-navigation">
+            navigation
+        </div>
+
+        <div class="box left-content">
+            content
+        </div>
+
+        <div class="box left-ads">
+            ads
+        </div>
+
+        <div class="box left-footer">
+            footer
+        </div>
+
+
+        <!-- Main Right Layout -->
+
+        <div class="box header">
+            header
+        </div>
+
+        <div class="box banner">
+            (optional)<br>
+            banner
+        </div>
+
+        <div class="box navigation">
+            navigation
+        </div>
+
+        <div class="box content">
+            content
+        </div>
+
+        <div class="box ads">
+            ads
+        </div>
+
+        <div class="box footer">
+            footer
+        </div>
+
+
+    </div>
+
+</body>
+</html>
